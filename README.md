@@ -1,4 +1,4 @@
-ACsN v1.5
+ACsN v1.5 - Python
 =====
 <div> 
 	<table frame=void rules=none>
@@ -23,15 +23,6 @@ Please, cite our paper on [Nature Communications].
 
 Mandracchia, B., Hua, X., Guo, C. et al. Fast and accurate sCMOS noise correction for fluorescence microscopy. Nat Commun 11, 94 (2020) doi:10.1038/s41467-019-13841-8
 
-## Version Updates ##
-- Extended support to Linux and Mac OS (partial)
-- Added Python version
-- Addition of weight factor to allow for user control of smoothing
-- Video filtering processes have been updated
-- Sparse Filtering updated
-- Python version is partially compatible with GPU computing
-
-## Python: ##
 ## System Requirements ##
 ### Hardware Requirements ###
 ACsN requires a standard computer with enough RAM to support Python >= 3.7. For minimum performance, this will be a computer with about 2 GB of RAM. For optimal performance, we recomend the following specs:
@@ -42,7 +33,6 @@ CPU: 6+ cores, 3.2+ GHz/core.
 ### Software Requirements ###
 Python 3.7+
 Windows OS 7+
-Linux OS
 Partial functionality on Mac OS
 
 ## Install ##
@@ -58,46 +48,6 @@ To run ACsN files:
      - vsrepo.py install msvfunc
  - Load your files using the ASCN_Run.py file. Run the ACSN_Run.py file in the terminal using the command (possible only when you're in the same directory):
    - python ACSN_Run.py
-
-## MATLAB: ##
-## System Requirements ##
-### Hardware Requirements ###
-ACsN requires a standard computer with enough RAM to support MATLAB 2018b. For minimum performance, this will be a computer with about 4 GB of RAM. For optimal performance, we recomend the following specs:
-
-RAM: 16+ GB; 
-CPU: 6+ cores, 3.2+ GHz/core.
-
-### Software Requirements ###
-MATLAB 2018b+ 
-
-MATLAB "Curve Fitting" Toolbox
-
-Windows OS 64 bit, Linux 64 bit or Mac OS X 64 bit*
-
-## Install ##
-### MATLAB Command Line ###
-To run ACsN from MATLAB command line:
-
- - Add the folder ACsN_code to your MATLAB path (including subfolders).
- - In the command line type help ACSN or run the Sample code script in the Test Images folder to see the code usage.
-
-### ImageJ/Fiji ###
-To run ACsN from ImageJ/Fiji follow these steps:
-
- - Add the ImageJ-MATLAB update site to ImageJ. To see how, look at [here][ImageJ-MATLAB].
- - Go to Edit > Options > MATLAB and enter the file path for MATLAB licence.
- - Add the ACsN_code folder and subfolders to the MATLAB path.
- - Copy the file 'ACsN_.m' to the folder '<ImageJ installation folder name>\plugins\Scripts\Process\'.
- - Select an open image in ImageJ and then press Process > ACsN from the menu toolbar. 
- - To test the program you can use the images provided in the Test Images folder. See the file Settings.txt for the aquisition parameters.
-	
-The installation on a recommended computer should take less than 3 seconds.
-
-
-\* Mac OS is only partially supported
-
-[ImageJ-MATLAB]: https://imagej.net/MATLAB_Scripting#Prerequisites
-[Nature Communications]: https://www.nature.com/articles/s41467-019-13841-8
 
 ## Creators ##
 Suraj Rajendran (Python Version) and Biagio Mandracchia

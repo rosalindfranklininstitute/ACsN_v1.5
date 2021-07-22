@@ -1,0 +1,6 @@
+numpy
+scipy
+matplotlib
+colorama
+scikit-image
+joblib

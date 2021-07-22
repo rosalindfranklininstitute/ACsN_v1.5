@@ -1,5 +1,0 @@
-Acquisition parameters
-
-NA = 1.45
-Lambda = 680 nm
-Pixel Size = 65 nm

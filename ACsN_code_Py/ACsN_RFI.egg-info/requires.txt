@@ -1,0 +1,7 @@
+numpy
+cupy-cuda112
+scipy
+matplotlib
+colorama
+scikit-image
+joblib
