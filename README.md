@@ -37,6 +37,35 @@ Partial functionality on Mac OS
 
 ## Install ##
 ### Command Line ###
+
+The instructions here only work when using a conda environment
+
+With Anaconda or miniconda or miniforge create a new environment (or use exisiting one), with python version >=3.7
+
+With command-line setup and activated to conda environment, install the following. These are needed.
+
+>conda install openblas
+>conda install cupy
+
+Clone this repo and extract files.
+
+Navigate first to Sparse_Filtering/
+>cd Sparse_Filtering
+And then install it
+>python3 setup.py install
+
+Then navigate to ACsN_code/
+>cd ../ACsN_code
+And then install it
+>python3 setup.py install
+
+And it should be ready to run
+
+You can test by running the example in tests folder
+>cd ..
+>python3 tests/ACSN_Run.py
+
+
 To run ACsN files:
 
  - Clone this repository
@@ -51,3 +80,4 @@ To run ACsN files:
 
 ## Creators ##
 Suraj Rajendran (Python Version) and Biagio Mandracchia
+Modified by Luis Perdigao for Python only version
