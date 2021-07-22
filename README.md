@@ -1,4 +1,4 @@
-ACsN v1.5 - Python
+ACsN v1.5.1 - Python
 =====
 <div> 
 	<table frame=void rules=none>
@@ -38,16 +38,31 @@ Partial functionality on Mac OS
 ## Install ##
 ### Command Line ###
 
-The instructions here only work when using a conda environment
+The instructions here only work when using a conda environment.
 
 With Anaconda or miniconda or miniforge create a new environment (or use exisiting one), with python version >=3.7
+
+For example:
+
+(Optional, depending in system being used)
+If using module system, do
+>conda load miniconda
+
+Create new environment
+>conda create --name ACSN python=3.7
+
+Activate it
+>conda activate ACSN
+
+
 
 With command-line setup and activated to conda environment, install the following. These are needed.
 
 >conda install openblas
 >conda install cupy
 
-Clone this repo and extract files.
+
+Clone this repository and extract/unzip files.
 
 Navigate first to Sparse_Filtering/
 >cd Sparse_Filtering
@@ -65,18 +80,9 @@ You can test by running the example in tests folder
 >cd ..
 >python3 tests/ACSN_Run.py
 
-
-To run ACsN files:
-
- - Clone this repository
- - Run the command 'python setup.py install' after you're in the Sparse_Filtering folder
- - Install VapourSynth from https://github.com/vapoursynth/vapoursynth/releases
-   - Install the R48 version if using Python 3.7. Otherwise, install the newest version
-   - Once installed, got to the directory where vsrepo.py is located and install bm3d and msvfunc using the commands:
-     - vsrepo.py install bm3d
-     - vsrepo.py install msvfunc
- - Load your files using the ASCN_Run.py file. Run the ACSN_Run.py file in the terminal using the command (possible only when you're in the same directory):
-   - python ACSN_Run.py
+And... if you  want to do somthing more, it is perhaps best to reuse ACSN_Run.py file,
+copy, rename. Open in a text editor or IDE, change the reference to your own files and
+provide output location. Good luck.
 
 ## Creators ##
 Suraj Rajendran (Python Version) and Biagio Mandracchia
