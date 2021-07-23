@@ -46,7 +46,7 @@ For example:
 
 (Optional, depending in system being used)
 If using module system, do
->conda load miniconda
+>module load miniconda
 
 Create new environment
 >conda create --name ACSN python=3.7
