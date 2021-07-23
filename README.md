@@ -46,43 +46,47 @@ For example:
 
 (Optional, depending in system being used)
 If using module system, do
->module load miniconda
+`$module load miniconda`
 
 Create new environment
->conda create --name ACSN python=3.7
+`$conda create --name ACSN python=3.7`
 
 Activate it
->conda activate ACSN
-
+`$conda activate ACSN`
 
 
 With command-line setup and activated to conda environment, install the following. These are needed.
 
->conda install openblas
->conda install cupy
+`$conda install openblas`
+
+`$conda install cupy`
 
 
 Clone this repository and extract/unzip files.
 
 Navigate first to Sparse_Filtering/
->cd Sparse_Filtering
+`$cd Sparse_Filtering`
+
 And then install it
->python3 setup.py install
+`$python3 setup.py install`
 
 Then navigate to ACsN_code/
->cd ../ACsN_code
+`$cd ../ACsN_code`
+
 And then install it
->python3 setup.py install
+`$python3 setup.py install`
 
 And it should be ready to run
 
 You can test by running the example in tests folder
->cd ..
->python3 tests/ACSN_Run.py
+`$cd ..`
+`$python3 tests/ACSN_Run.py`
+
 
 And... if you  want to do somthing more, it is perhaps best to reuse ACSN_Run.py file,
 copy, rename. Open in a text editor or IDE, change the reference to your own files and
 provide output location. Good luck.
+
 
 ## Creators ##
 Suraj Rajendran (Python Version) and Biagio Mandracchia
