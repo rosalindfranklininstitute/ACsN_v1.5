@@ -79,7 +79,7 @@ else:
         I = np.array(I)[:, :, newaxis] # adding a third dimension
 
 
-I = I.astype(np.int16)
+I = I.astype(np.int16) #Why converting?
 
 NA = 1.45
 Lambda = .670
