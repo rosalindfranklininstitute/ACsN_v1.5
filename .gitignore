@@ -1,1 +1,6 @@
-Sparse_Filtering/dist/Sparse_Filtering-1.0.0-py3.7.egg
+Sparse_Filtering/dist/
+Sparse_Filtering/build/
+ACsN_code_Py/build
+*.egg-info
+ACsN_code_Py/dist/
+ACSN_RFI-1.15.1-py3.7.egg

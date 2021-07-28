@@ -11,7 +11,7 @@ setup(
     author_email='ymir.makinen@tuni.fi',
     packages=find_packages(),
     python_requires='>=3.6',
-    install_requires= ['numpy<1.21>=1.17', 'scipy', 'matplotlib', 'colorama', 'scikit-image', 'joblib', 'numba'],
+    install_requires= ['numpy<=1.20>=1.17', 'scipy', 'matplotlib', 'colorama', 'scikit-image', 'joblib', 'numba'],
     classifiers=[
         'Development Status :: 3 - Alpha',
         'License :: Free for non-commercial use',
